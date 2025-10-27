@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>شركة عليا للاستشارات الهندسية - معلومات الاتصال</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #007bff; /* أزرق هندسي */
+            --secondary-color: #343a40; /* لون ثانوي غامق */
+            --background-color: #f8f9fa;
+            --card-background: #ffffff;
+            --border-radius: 10px;
+        }
+
+        body {
+            font-family: 'Cairo', sans-serif;
+            background-color: var(--background-color);
+            color: var(--secondary-color);
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .container {
+            background-color: var(--card-background);
+            padding: 40px;
+            border-radius: var(--border-radius);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+            max-width: 550px;
+            width: 100%;
+            text-align: right;
+            border-top: 5px solid var(--primary-color);
+        }
+
+        h1 {
+            color: var(--primary-color);
+            text-align: center;
+            font-weight: 700;
+            margin-bottom: 25px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid #eee;
+        }
+
+        h2 {
+            color: var(--secondary-color);
+            font-size: 1.3rem;
+            margin-top: 30px;
+            margin-bottom: 15px;
+            padding-right: 10px;
+            border-right: 3px solid var(--primary-color);
+        }
+
+        .info-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 0;
+            border-bottom: 1px dashed #e9ecef;
+        }
+
+        .info-item:last-child {
+            border-bottom: none;
+        }
+
+        .info-item strong {
+            color: var(--primary-color);
+            min-width: 100px;
+            text-align: right;
+        }
+
+        .info-item a {
+            color: var(--secondary-color);
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .info-item a:hover {
+            color: var(--primary-color);
+        }
+
+        .qr-code-section {
+            text-align: center;
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid #dee2e6;
+        }
+
+        .qr-code-section img {
+            max-width: 180px;
+            height: auto;
+            border: 5px solid var(--primary-color);
+            border-radius: 5px;
+            margin-top: 15px;
+        }
+
+        .social-links {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .social-links a {
+            display: inline-block;
+            margin: 0 10px;
+            color: var(--secondary-color);
+            font-size: 1.1rem;
+            text-decoration: none;
+            padding: 5px 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        .social-links a:hover {
+            background-color: var(--primary-color);
+            color: #ffffff;
+            border-color: var(--primary-color);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>شركة عليا للاستشارات الهندسية</h1>
+
+        <div class="contact-details">
+            <h2>بيانات الاتصال</h2>
+            <div class="info-item">
+                <span>الاسم</span>
+                <strong>م. صالح محمد عليا</strong>
+            </div>
+            <div class="info-item">
+                <span>المسمى الوظيفي</span>
+                <strong>مهندس مدني</strong>
+            </div>
+            <div class="info-item">
+                <span>رقم الهاتف</span>
+                <a href="tel:+963931851729">0931851729</a>
+            </div>
+            <div class="info-item">
+                <span>البريد الإلكتروني</span>
+                <a href="mailto:Engsalihalia@Gmail.com">Engsalihalia@Gmail.com</a>
+            </div>
+            <div class="info-item">
+                <span>العنوان</span>
+                <strong>الكسوة، الشارع الرئيسي، بناء المظلوم</strong>
+            </div>
+        </div>
+
+        <div class="qr-code-section">
+            <h2>مسح لحفظ جهة الاتصال (vCard QR)</h2>
+            <p>امسح الرمز التالي لحفظ جميع بيانات المكتب مباشرة في هاتفك.</p>
+            <img src="path/to/your/qr-code.png" alt="QR Code لشركة عليا للاستشارات الهندسية">
+            </div>
+        
+        <div class="social-links">
+            <h2>تابعنا على</h2>
+            <a href="https://www.facebook.com/share/1BMqpfofnn/?mibextid=wwXIfr" target="_blank">فيسبوك</a>
+            <a href="https://www.instagram.com/engsalihalia?igsh=aXJ3YzM3aWd0Nzhv&utm_source=qr" target="_blank">انستجرام</a>
+        </div>
+    </div>
+
+</body>
+</html>
