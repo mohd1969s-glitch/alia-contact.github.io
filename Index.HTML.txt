@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>روابط الاتصال الاحترافية - شركة عليا للاستشارات الهندسية</title>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/qrious/4.0.2/qrious.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<style>
+body {
+font-family: 'Cairo', sans-serif;
+background-color: #f8f9fa;
+display: flex;
+justify-content: center;
+align-items: center;
+min-height: 100vh;
+margin: 0;
+}
+.link-container {
+background-color: #ffffff;
+padding: 30px 25px;
+border-radius: 15px;
+box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+text-align: center;
+max-width: 400px;
+width: 100%;
+}
+h1 {
+color: #007bff;
+margin-bottom: 20px;
+}
+a.link-item {
+display: flex;
+align-items: center;
+justify-content: flex-end;
+text-decoration: none;
+color: #343a40;
+padding: 12px 15px;
+margin: 8px 0;
+border: 1px solid #ccc;
+border-radius: 8px;
+transition: all 0.3s;
+font-size: 1rem;
+}
+a.link-item:hover {
+background-color: #007bff;
+color: #ffffff;
+border-color: #007bff;
+}
+a.link-item i {
+margin-left: 10px;
+font-size: 1.2rem;
+}
+#qrcode {
+margin-top: 20px;
+}
+p.qr-text {
+margin-top: 15px;
+font-weight: bold;
+color: #343a40;
+}
+button.download-btn {
+margin-top: 15px;
+padding: 10px 15px;
+background-color: #007bff;
+color: #fff;
+border: none;
+border-radius: 8px;
+cursor: pointer;
+transition: all 0.3s;
+}
+button.download-btn:hover {
+background-color: #0056b3;
+}
+</style>
+</head>
+<body>
+
+<div class="link-container">
+<h1>شركة عليا للاستشارات الهندسية</h1>
+
+<a class="link-item" href="tel:+963931851729" target="_blank"><i class="fas fa-phone"></i> الاتصال بم. صالح محمد عليا</a>
+<a class="link-item" href="mailto:Engsalihalia@Gmail.com" target="_blank"><i class="fas fa-envelope"></i> إرسال بريد إلكتروني</a>
+<a class="link-item" href="https://www.google.com/maps/search/?api=1&query=الكسوة،+الشارع+الرئيسي،+بناء+المظلوم" target="_blank"><i class="fas fa-map-marker-alt"></i> عرض موقع المكتب على الخريطة</a>
+<a class="link-item" href="https://www.facebook.com/share/1BMqpfofnn/?mibextid=wwXIfr" target="_blank"><i class="fab fa-facebook"></i> زيارة صفحة الفيسبوك</a>
+<a class="link-item" href="https://www.instagram.com/engsalihalia?igsh=aXJ3YzM3aWd0Nzhv&utm_source=qr" target="_blank"><i class="fab fa-instagram"></i> متابعة الانستجرام</a>
+
+<p class="qr-text">امسح QR Code للوصول لكل الروابط مباشرة</p>
+<canvas id="qrcode"></canvas>
+<br>
+<button class="download-btn" onclick="downloadQR()">⬇️ تنزيل QR Code كصورة</button>
+</div>
+
+<script>
+// إنشاء QR Code تلقائي عند تحميل الصفحة
+const qr = new QRious({
+element: document.getElementById('qrcode'),
+value: window.location.href,
+size: 180,
+background: 'white',
+foreground: '#007bff'
+});
+
+// وظيفة تنزيل QR Code
+function downloadQR() {
+const link = document.createElement('a');
+link.href = qr.toDataURL("image/png");
+link.download = "alia-contact-qr.png";
+link.click();
+}
+</script>
+
+</body>
+</html>
